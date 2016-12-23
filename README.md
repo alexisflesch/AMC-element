@@ -1,10 +1,15 @@
 #AMCelement.py
 
-This script will go through an entire folder and look for all your
+This script will help you set up TeXamator with AMC (auto multiple choice).
+More information here :
+
+http://alexisfles.ch/en
+
+This script will go through an entire folder (and its subfolders) and look for all your
 .tex files. It will open them, look for \element{foo}{bar} occurrences
 and replace them with \begin{qcm}{foo}bar\end{qcm}.
     
-If it can't find the definition of the environment qcm given below,
+If it can't find the definition of the environment qcm,
 it will add it to the file, just before \begin{document}
     
 It will then save the result to a new file (only if needs be, that is
